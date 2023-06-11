@@ -1,0 +1,31 @@
+Script started on 2023-06-11 12:36:25+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+[?2004h]0;root@ubuntu: /mnt/mac/ece373-assignment4-mshllroot@ubuntu:/mnt/mac/ece373-assignment4-mshll# insmod hw4.ko 
+[?2004l[?2004h]0;root@ubuntu: /mnt/mac/ece373-assignment4-mshllroot@ubuntu:/mnt/mac/ece373-assignment4-mshll# dmesg | tail
+[?2004l[  695.742357]  default_idle_call+0x40/0x150
+[  695.742583]  cpuidle_idle_call+0x174/0x200
+[  695.742803]  do_idle+0xac/0x100
+[  695.742960]  cpu_startup_entry+0x30/0x70
+[  695.743255]  secondary_start_kernel+0xfc/0x190
+[  695.743500]  __secondary_switched+0x90/0x94
+[  695.743724] ---[ end trace 724508aca95bbbbc ]---
+[  859.541999] Unloaded module 
+[  895.168285] hw4 module loading... blink_rate = 2
+[  895.168561] hw4 allocated 1 devices at major: 509
+[?2004h]0;root@ubuntu: /mnt/mac/ece373-assignment4-mshllroot@ubuntu:/mnt/mac/ece373-assignment4-mshll# ls /dev | grep ece
+[?2004l[01;31m[Kece[m[K_led
+[?2004h]0;root@ubuntu: /mnt/mac/ece373-assignment4-mshllroot@ubuntu:/mnt/mac/ece373-assignment4-mshll# su[K[Krmmod hw4.[K
+[?2004l[?2004h]0;root@ubuntu: /mnt/mac/ece373-assignment4-mshllroot@ubuntu:/mnt/mac/ece373-assignment4-mshll# rmmod hw4ls /dev | grep ece[6Pdmesg | tail
+[?2004l[  695.742583]  cpuidle_idle_call+0x174/0x200
+[  695.742803]  do_idle+0xac/0x100
+[  695.742960]  cpu_startup_entry+0x30/0x70
+[  695.743255]  secondary_start_kernel+0xfc/0x190
+[  695.743500]  __secondary_switched+0x90/0x94
+[  695.743724] ---[ end trace 724508aca95bbbbc ]---
+[  859.541999] Unloaded module 
+[  895.168285] hw4 module loading... blink_rate = 2
+[  895.168561] hw4 allocated 1 devices at major: 509
+[  926.303164] Unloaded module 
+[?2004h]0;root@ubuntu: /mnt/mac/ece373-assignment4-mshllroot@ubuntu:/mnt/mac/ece373-assignment4-mshll# [H[2J]0;root@ubuntu: /mnt/mac/ece373-assignment4-mshllroot@ubuntu:/mnt/mac/ece373-assignment4-mshll# [?2004l
+exit
+
+Script done on 2023-06-11 12:37:10+00:00 [COMMAND_EXIT_CODE="0"]
